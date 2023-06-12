@@ -1,0 +1,29 @@
+.navbar-brand{
+    margin-left: 50px;
+}
+
+.nav-link{
+    color: white;
+    margin-right: 50px;
+}
+
+.body{
+    background-color: black;
+    font-family: sans-serif;
+}
+
+@media all and (max-width: 767px) {
+    .nav-link{
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+    .nav-item{
+        font-size: 1rem;
+        background-color: rgb(24, 24, 35);
+        border-bottom: 1px solid rgb(48, 48, 48);
+    }
+    .navbar-brand{
+        margin-left: 5px;
+    }
+}
