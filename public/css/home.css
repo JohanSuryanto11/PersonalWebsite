@@ -3,21 +3,19 @@
     text-decoration: none;
 }
 
-.profile{
-    padding-left: 0px;
-    padding-right: 0px;
+.fade-in-left{
     animation-name: fadeInLeft;
     animation-duration: 2s;
 }
 
-h1{
-    animation-name: fadeInRight;
+.fade-in-right{
+    animation-name: fadeInLeft;
     animation-duration: 2s;
 }
 
-h5{
-    animation-name: fadeInRight;
-    animation-duration: 2.5s;
+.profile{
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .profile-bg{
@@ -33,19 +31,34 @@ h5{
     max-height: 950px;
 }
 
-
+.list-style{
+    list-style-type: circle;
+    color: white;
+}
 
 .sahabat-offset{
     color: red;
 }
 
+.heading-moreme{
+    font-weight: bold;
+}
+
+.more-about-me-button{
+    color: black;
+    border-bottom: 1px solid #5b6876;
+    text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    line-height: 3rem;
+}
 
 @media all and (max-width: 767px) {
     .about{
         background-color: rgb(24, 24, 35);
         padding-top: 20px;
         padding-left: 30px;
-
         padding-bottom: 20px;
     }
 
@@ -98,6 +111,24 @@ h5{
     .work-desc{
         color: white;
         font-size: 16px;
+    }
+
+    .more-me{
+        background-color: #fff3e4;
+        padding-top: 3rem;
+    }
+
+    .picture-moreme{
+        flex: auto;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .inside-me{
+        color: #5b6876;
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 200%;
     }
 
 }
