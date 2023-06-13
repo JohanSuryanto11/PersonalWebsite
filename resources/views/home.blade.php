@@ -51,16 +51,51 @@
 </div>
 
 <div class="skill-set mt-5">
-    <h1 class="heading-skillset">Skillset</h1>
-    <p>With these skills, I can fill whatever your needs are, I can pretty much take on any challenge.</p>
+    <div class="wrapper">
+        <h1 class="heading-skillset mb-3">Skillset</h1>
+        <h5 class="p-skillset">With these skills, I can fill whatever your needs are, I can pretty much take on any challenge.</h5>
+    </div>
 
-    <h1>Programming Language</h1>
-    <h1 class="heading-language">Java</h1>
-    <h1 class="heading-language">JavaScript</h1>
-    <h1 class="heading-language">C++</h1>
-    <h1 class="heading-language">C#</h1>
-    <h1 class="heading-language">PHP</h1>
-    <h1 class="heading-language">SQL</h1>
+    <div class="wrapper">
+        <h1 class="heading-skillset mt-5">Programming Language</h1>
+        <div class="skill-wrapper">
+            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/java.png')}}" alt="profile" >
+            <h1 class="heading-language">Java</h1>
+            <h5 class="p-skillset">My university has a strong emphasis on Java programming language, providing comprehensive courses and resources to equip me with in-depth knowledge and practical skills in Java development.</h5>
+            <a class="link-button" href="/download/programmingcertificate.jpg" target="_blank">Certificate</a>
+        </div>
+        <div class="skill-wrapper">
+            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/java.png')}}" alt="profile" >
+            <h1 class="heading-language">C++</h1>
+            <h5 class="p-skillset">My university has a strong emphasis on Java programming language, providing comprehensive courses and resources to equip me with in-depth knowledge and practical skills in Java development.</h5>
+            <a class="link-button" href="/download/programmingcertificate.jpg" target="_blank">Certificate</a>
+        </div>
+        <div class="skill-wrapper">
+            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/java.png')}}" alt="profile" >
+            <h1 class="heading-language">C#</h1>
+            <h5 class="p-skillset">My university has a strong emphasis on Java programming language, providing comprehensive courses and resources to equip me with in-depth knowledge and practical skills in Java development.</h5>
+            <a class="link-button" href="/download/programmingcertificate.jpg" target="_blank">Certificate</a>
+        </div>
+        <div class="skill-wrapper">
+            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/java.png')}}" alt="profile" >
+            <h1 class="heading-language">PHP</h1>
+            <h5 class="p-skillset">My university has a strong emphasis on Java programming language, providing comprehensive courses and resources to equip me with in-depth knowledge and practical skills in Java development.</h5>
+            <a class="link-button" href="/download/programmingcertificate.jpg" target="_blank">Certificate</a>
+        </div>
+        <div class="skill-wrapper">
+            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/java.png')}}" alt="profile" >
+            <h1 class="heading-language">JavaScript</h1>
+            <h5 class="p-skillset">My university has a strong emphasis on Java programming language, providing comprehensive courses and resources to equip me with in-depth knowledge and practical skills in Java development.</h5>
+            <a class="link-button" href="/download/programmingcertificate.jpg" target="_blank">Certificate</a>
+        </div>
+        <div class="skill-wrapper">
+            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/java.png')}}" alt="profile" >
+            <h1 class="heading-language">SQL</h1>
+            <h5 class="p-skillset">My university has a strong emphasis on Java programming language, providing comprehensive courses and resources to equip me with in-depth knowledge and practical skills in Java development.</h5>
+            <a class="link-button" href="/download/programmingcertificate.jpg" target="_blank">Certificate</a>
+        </div>
+    </div>
+
 
     <h1>Framework</h1>
     <h1>Unreal Engine</h1>

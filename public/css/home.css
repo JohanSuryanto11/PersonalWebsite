@@ -54,6 +54,41 @@
     line-height: 3rem;
 }
 
+.heading-skillset{
+    font-weight: bold;
+    color: white;
+    font-size: 32px;
+}
+
+.p-skillset{
+    color: #8491a0;
+    line-height: 150%;
+}
+
+.wrapper{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.heading-language{
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.skill-logo{
+    width: 30px;
+    height: auto;
+}
+
+.link-button{
+    color: white;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 10px;
+    line-height: 3rem;
+}
 @media all and (max-width: 767px) {
     .about{
         background-color: rgb(24, 24, 35);
