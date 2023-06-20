@@ -59,51 +59,53 @@
     <div class="wrapper">
         <h1 class="heading-skillset mt-5">Programming Language</h1>
         <div class="skill-wrapper">
-            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/java.png')}}" alt="profile" >
+            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/java.png')}}" alt="profile" >
             <h1 class="heading-language">Java</h1>
             <h5 class="p-skillset">My university has a strong emphasis on Java programming language, providing comprehensive courses and resources to equip me with in-depth knowledge and practical skills in Java development.</h5>
             <a class="link-button" href="/download/programmingcertificate.jpg" target="_blank">Certificate</a>
         </div>
         <div class="skill-wrapper">
-            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/java.png')}}" alt="profile" >
+            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/c++.png')}}" alt="profile" >
             <h1 class="heading-language">C++</h1>
-            <h5 class="p-skillset">My university has a strong emphasis on Java programming language, providing comprehensive courses and resources to equip me with in-depth knowledge and practical skills in Java development.</h5>
-            <a class="link-button" href="/download/programmingcertificate.jpg" target="_blank">Certificate</a>
+            <h5 class="p-skillset">By assisting my friend with their project, I had the opportunity to dig into C++ programming, expanding my knowledge and honing my skills in this powerful language.</h5>
         </div>
         <div class="skill-wrapper">
-            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/java.png')}}" alt="profile" >
+            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/chash.png')}}" alt="profile" >
             <h1 class="heading-language">C#</h1>
-            <h5 class="p-skillset">My university has a strong emphasis on Java programming language, providing comprehensive courses and resources to equip me with in-depth knowledge and practical skills in Java development.</h5>
-            <a class="link-button" href="/download/programmingcertificate.jpg" target="_blank">Certificate</a>
+            <h5 class="p-skillset">Since my final project using framework Unity, i gained valuable C# skills.</h5>
+            <a class="link-button" href="https://github.com/JohanSuryanto11/HealthyTD" target="_blank">Certificate</a>
         </div>
         <div class="skill-wrapper">
-            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/java.png')}}" alt="profile" >
+            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/php.png')}}" alt="profile" >
             <h1 class="heading-language">PHP</h1>
-            <h5 class="p-skillset">My university has a strong emphasis on Java programming language, providing comprehensive courses and resources to equip me with in-depth knowledge and practical skills in Java development.</h5>
+            <h5 class="p-skillset">During my time at university, I had the opportunity to learn PHP, acquiring a solid understanding of its concepts and practical application.</h5>
             <a class="link-button" href="/download/programmingcertificate.jpg" target="_blank">Certificate</a>
         </div>
         <div class="skill-wrapper">
-            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/java.png')}}" alt="profile" >
+            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/js.png')}}" alt="profile" >
             <h1 class="heading-language">JavaScript</h1>
-            <h5 class="p-skillset">My university has a strong emphasis on Java programming language, providing comprehensive courses and resources to equip me with in-depth knowledge and practical skills in Java development.</h5>
-            <a class="link-button" href="/download/programmingcertificate.jpg" target="_blank">Certificate</a>
+            <h5 class="p-skillset">By building my own website, I not only created an online presence, but I also gained a comprehensive understanding of JavaScript, as it played a crucial role in enhancing the interactivity and functionality of my site.</h5>
         </div>
         <div class="skill-wrapper">
-            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/java.png')}}" alt="profile" >
+            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/sql.png')}}" alt="profile" >
             <h1 class="heading-language">SQL</h1>
-            <h5 class="p-skillset">My university has a strong emphasis on Java programming language, providing comprehensive courses and resources to equip me with in-depth knowledge and practical skills in Java development.</h5>
-            <a class="link-button" href="/download/programmingcertificate.jpg" target="_blank">Certificate</a>
+            <h5 class="p-skillset">Through my project during university, I gained hands-on experience with SQL, mastering its principles and techniques for effective database management and manipulation.</h5>
+            <a class="link-button" href="/download/databasecertificate.jpg" target="_blank">Certificate</a>
         </div>
     </div>
 
 
-    <h1>Framework</h1>
-    <h1>Unreal Engine</h1>
-    <h1>Unity</h1>
-    <h1>Laravel</h1>
-    <h1>Bootstrap</h1>
-    <h1>Android Studio</h1>
-    <h1></h1>
+    <h1 class="heading-framework mt-5">Framework or IDE that i've worked with</h1>
+    <div class="framework-grid">
+
+        <div class="framework-box"><img class="img-fluid framework-logo" src="{{asset('img/logo/framework/unreal.png')}}" alt="profile" ></div>
+        <div class="framework-box">Unity</div>
+        <div class="framework-box">Laravel</div>
+        <div class="framework-box">Bootstrap</div>
+        <div class="framework-box">Android Studio</div>
+        <div class="framework-box">Netbeans</div>
+    </div>
+
 </div>
 <script src="{{ asset('js/home.js') }}" defer></script>
 <link href="{{ asset('css/home.css') }}" rel="stylesheet">

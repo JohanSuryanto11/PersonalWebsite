@@ -63,6 +63,7 @@
 .p-skillset{
     color: #8491a0;
     line-height: 150%;
+    margin-bottom: -9px;
 }
 
 .wrapper{
@@ -88,6 +89,11 @@
     font-size: 16px;
     padding-bottom: 10px;
     line-height: 3rem;
+    transform: translate3d(0px,-10px,0px);
+}
+
+.framework-logo{
+    height: 140px;
 }
 @media all and (max-width: 767px) {
     .about{
@@ -166,6 +172,30 @@
         line-height: 200%;
     }
 
+    .skill-wrapper{
+        margin-top: 10px;
+    }
+
+    .heading-framework{
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+    .framework-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 0px;
+        display: grid;
+        grid-auto-columns: 1fr;
+
+    }
+    .framework-box{
+        width: auto;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #8491a0;
+        justify-content: center;
+    }
 }
 
 @keyframes fadeInLeft {
