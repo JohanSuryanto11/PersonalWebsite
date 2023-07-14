@@ -1,3 +1,4 @@
+/*profile section*/
 .country{
     color: gray;
     text-decoration: none;
@@ -31,19 +32,75 @@
     max-height: 950px;
 }
 
+/*experience section*/
+.experience-section{
+    padding: 265px 72px 120px;
+}
+.experience-block{
+    padding-top: 8px;
+}
+.number{
+    font-size: 117px;
+    color: #8491a0;
+    line-height: 100%;
+}
+.heading-work{
+    font-size: small;
+    font-weight: 800;
+    color: #8491a0;
+}
+.heading-companies{
+    font-weight: bold;
+    color: white;
+    font-size: 32px;
+}
+.heading-company-name{
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    line-height: 100%;
+    margin-bottom: 0;
+}
+.worked-since{
+    color: #8491a0;
+}
+.work-desc{
+    color: white;
+    font-size: 16px;
+}
 .list-style{
     list-style-type: circle;
     color: white;
 }
-
 .sahabat-offset{
     color: red;
 }
+.next-company{
+    color: green;
+}
 
+/*more me section*/
+.more-me{
+    background-color: #fff3e4;
+    padding-top: 0px;
+    height: 600px;
+}
+.wrapper-moreme{
+    height: 100%;
+}
+.left-side{
+    padding: 120px 72px;
+}
 .heading-moreme{
     font-weight: bold;
 }
-
+.inside-me{
+    color: #5b6876;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 200%;
+    margin-bottom: 72px;
+}
 .more-about-me-button{
     color: black;
     border-bottom: 1px solid #5b6876;
@@ -53,6 +110,23 @@
     margin-left: 10px;
     line-height: 3rem;
 }
+.picture-moreme{
+    flex: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+    height: 600px;
+    background-image: url('../img/moreme.jpg');
+    background-position: 50% 0%;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
 
 .heading-skillset{
     font-weight: bold;
@@ -93,9 +167,21 @@
 }
 
 .framework-logo{
-    height: 140px;
+    height: 60px;
 }
+
+.project-list:hover{
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.link-project{
+    text-decoration: none;
+}
+
+
 @media all and (max-width: 767px) {
+
     .about{
         background-color: rgb(24, 24, 35);
         padding-top: 20px;
@@ -111,16 +197,32 @@
         display: none;
     }
 
+    .wrapper-exp.col{
+        flex: auto;
+    }
+
+    /*experience section*/
+    .experience-section{
+        padding: 50px 0px 0px 20px;
+    }
+    .experience-block{
+        padding-top: 8px;
+    }
     .number{
         font-size: 117px;
         color: #8491a0;
         line-height: 100%;
     }
-
-    .experience-block{
-        padding-top: 8px;
+    .heading-work{
+        font-size: small;
+        font-weight: 800;
+        color: #8491a0;
     }
-
+    .heading-companies{
+        font-weight: bold;
+        color: white;
+        font-size: 32px;
+    }
     .heading-company-name{
         font-weight: bold;
         font-size: 24px;
@@ -128,50 +230,60 @@
         line-height: 100%;
         margin-bottom: 0;
     }
-
-    .heading-companies{
-        font-weight: bold;
-        color: white;
-        font-size: 32px;
-    }
-
-    .heading-work{
-        font-size: small;
-        font-weight: 800;
-        color: #8491a0;
-    }
-
-    .experience-section{
-        padding-top: 20px;
-    }
-
     .worked-since{
         color: #8491a0;
     }
-
     .work-desc{
         color: white;
         font-size: 16px;
     }
+    #more-experience{
+        display: none;
+    }
 
+
+    /*more me section*/
     .more-me{
         background-color: #fff3e4;
         padding-top: 3rem;
+        height: auto;
     }
-
-    .picture-moreme{
-        flex: auto;
-        padding-right: 0px;
-        padding-left: 0px;
+    .more-me.row{
+        display: block;
     }
-
+    .left-side{
+    padding: 0px 0px;
+    }
+    .heading-moreme{
+        font-weight: bold;
+    }
     .inside-me{
         color: #5b6876;
         font-size: 17px;
         font-weight: bold;
         line-height: 200%;
+        margin-bottom: 20px;
+    }
+    .more-about-me-button{
+        color: black;
+        border-bottom: 1px solid #5b6876;
+        text-decoration: none;
+        font-size: 16px;
+        padding-bottom: 10px;
+        margin-left: 20px;
+        line-height: 3rem;
+    }
+    .picture-moreme{
+        flex: auto;
+        padding-right: 0px;
+        padding-left: 0px;
+        height: 378px;
+        background-position: 50% 0%;
+        background-size: cover;
+        margin-top: 48px;
     }
 
+    /*skill section*/
     .skill-wrapper{
         margin-top: 10px;
     }
@@ -184,17 +296,52 @@
     }
     .framework-grid{
         grid-template-columns: 1fr 1fr;
-        grid-row-gap: 0px;
+        grid-row-gap: 0%;
+        grid-column-gap: 0%;
         display: grid;
         grid-auto-columns: 1fr;
 
     }
+
     .framework-box{
         width: auto;
+        align-items: center;
+        height: 140px;
         border-style: solid;
         border-width: 1px;
         border-color: #8491a0;
+        display: flex;
         justify-content: center;
+    }
+
+
+    .project-description{
+        position: relative;
+        padding: 40px 32px;
+        background-color: #181823;
+    }
+
+    .heading-description{
+        font-weight: bold;
+        color: white;
+
+    }
+
+    .description-p{
+        color: #8491a0;
+        line-height: 150%;
+    }
+
+    .footer{
+        background-color: #181823;
+        padding: 40px 40px;
+    }
+
+    .footer-logo{
+        font-size: 40px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
     }
 }
 

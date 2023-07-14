@@ -12,6 +12,11 @@
     font-family: sans-serif;
 }
 
+.footer-link{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
 @media all and (max-width: 767px) {
     .nav-link{
         color: white;

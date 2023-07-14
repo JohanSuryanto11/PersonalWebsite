@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="row align-items-center">
+<div id="about" class="row align-items-center">
     <div class="container mt-5 profile fade-in-left col">
         <img class="img-fluid" src="{{asset('img/home.png')}}" alt="profile" >
     </div>
@@ -16,38 +16,55 @@
 </div>
 <div class="profile-bg"></div>
 
-<div id="exp" class="container experience-section">
+<div id="exp" class="experience-section">
     <h5 class="heading-work">WORK EXPERIENCE</h5>
     <h1 class="heading-companies">Companies I have worked for in the past.</h1>
 
-    <div class="experience-block">
-        <div class="number">01</div>
-        <h3 class="heading-company-name"><span class="sahabat-offset">Sahabat Offset</span>, Operator</h3>
-        <p class="worked-since">Aug 2016 - May 2023, 6 years 10 months</p>
-        <p class="work-desc">I work in a printing company.
-            I learn a lot in work, like :
-        </p>
-        <ul>
-            <li class="list-style work-desc"> Time Menegement </li>
-        </ul>
+    <div class="experience-block row">
+        <div class="wrapper-exp col">
+            <div class="number">01</div>
+            <h3 class="heading-company-name"><span class="sahabat-offset">Sahabat Offset</span>, Operator</h3>
+            <p class="worked-since">Aug 2016 - May 2023, 6 years 10 months</p>
+            <p class="work-desc">I work in a printing company.
+                I learn a lot in work, like :
+            </p>
+            <ul>
+                <li class="list-style work-desc"> Time Menegement </li>
+                <li class="list-style work-desc"> Quality Control </li>
+                <li class="list-style work-desc"> Working Under Pressure </li>
+            </ul>
+        </div>
+        <div id="more-experience" class="experience-block col">
+            <div class="wrapper-exp">
+                <div class="number">02</div>
+                <h3 class="heading-company-name"><span class="next-company">Next up could be your company.
+                <p class="work-desc mt-3">I would love to learn from my work
+                </p>
+            </div>
+        </div>
     </div>
+
+
 
 </div>
 
-<div class="more-me mt-5">
-    <div class="text-center">
-        <h1 class="heading-moreme">Deep In My Mind</h1>
-        <h1 class="inside-me">CHOOSE OPTIMISM <br>
-        ALWAYS BE LEARNING <br>
-        BE AGGRESSIVELY OPEN-MINDED <br>
-        DON'T TAKE YOURSELF TOO SERIOUSLY <br>
-        BE CREATIVE, ADAPTIVE, AND PERSEVERANCE
-        </h1>
+<div class="more-me row mt-5">
+    <div class="wrapper-moreme left-side col">
+        <div class="text-center">
+            <h1 class="heading-moreme">Deep In My Mind</h1>
+            <h1 class="inside-me">CHOOSE OPTIMISM <br>
+            ALWAYS BE LEARNING <br>
+            BE AGGRESSIVELY OPEN-MINDED <br>
+            DON'T TAKE YOURSELF TOO SERIOUSLY <br>
+            BE CREATIVE, ADAPTIVE, AND PERSEVERANCE
+            </h1>
+        </div>
+        <a class="more-about-me-button" href="/social"> More About Me</a>
     </div>
-    <a class="more-about-me-button"> More About Me</a>
-    <div class="container mt-5 picture-moreme">
-        <img class="img-fluid" src="{{asset('img/moreme.jpg')}}" alt="profile" >
+    <div class="wrapper-moreme right-side col">
+        <div class="picture-moreme" ></div>
     </div>
+
 </div>
 
 <div class="skill-set mt-5">
@@ -73,7 +90,7 @@
             <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/chash.png')}}" alt="profile" >
             <h1 class="heading-language">C#</h1>
             <h5 class="p-skillset">Since my final project using framework Unity, i gained valuable C# skills.</h5>
-            <a class="link-button" href="https://github.com/JohanSuryanto11/HealthyTD" target="_blank">Certificate</a>
+            <a class="link-button" href="https://github.com/JohanSuryanto11/HealthyTD" target="_blank">Project</a>
         </div>
         <div class="skill-wrapper">
             <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/php.png')}}" alt="profile" >
@@ -98,15 +115,56 @@
     <h1 class="heading-framework mt-5">Framework or IDE that i've worked with</h1>
     <div class="framework-grid">
 
-        <div class="framework-box"><img class="img-fluid framework-logo" src="{{asset('img/logo/framework/unreal.png')}}" alt="profile" ></div>
-        <div class="framework-box">Unity</div>
-        <div class="framework-box">Laravel</div>
-        <div class="framework-box">Bootstrap</div>
-        <div class="framework-box">Android Studio</div>
-        <div class="framework-box">Netbeans</div>
+        <div class="framework-box"><img class="img-fluid framework-logo" src="{{asset('img/logo/framework/unreal.png')}}" alt="unreal engine" ></div>
+        <div class="framework-box"><img class="img-fluid framework-logo" src="{{asset('img/logo/framework/unity.png')}}" alt="unity" ></div>
+        <div class="framework-box"><img class="img-fluid framework-logo" src="{{asset('img/logo/framework/laravel.png')}}" alt="laravel" ></div>
+        <div class="framework-box"><img class="img-fluid framework-logo" src="{{asset('img/logo/framework/bootstrap.png')}}" alt="bootstrap" ></div>
+        <div class="framework-box"><img class="img-fluid framework-logo" src="{{asset('img/logo/framework/androidstudio.png')}}" alt="android studio" ></div>
+        <div class="framework-box"><img class="img-fluid framework-logo" src="{{asset('img/logo/framework/netbeans.png')}}" alt="netbeans" ></div>
     </div>
-
 </div>
+<div id="project" class="my-project mt-5">
+    <div class="wrapper">
+        <h5 class="description-p mb-4" style="font-weight: bold"> My Projects</h5>
+        <a class="link-project" href="https://github.com/JohanSuryanto11/HealthyTD" target="_blank"><div class="project-list mb-5">
+            <img class="img-fluid project-img" src="{{asset('img/project/healthytd.png')}}" alt="profile" >
+            <div class="project-description">
+                <h3 class="heading-description">Healthy TD</h3>
+                <h5 class="description-p">My final project for Bachelor degree. A strategy game simulating digestive system in humans</h5>
+            </div>
+        </div></a>
+        <a class="link-project" href="https://github.com/JohanSuryanto11/UTS-2018130019" target="_blank"><div class="project-list mb-5">
+            <img class="img-fluid project-img" src="{{asset('img/project/uts.png')}}" alt="profile" >
+            <div class="project-description">
+                <h3 class="heading-description">Midterm Exam</h3>
+                <h5 class="description-p">My Midterm Exam Advanced Web Programming.</h5>
+            </div>
+        </div></a>
+        <a class="link-project" href="https://github.com/JohanSuryanto11/Sukses" target="_blank"><div class="project-list mb-5">
+            <img class="img-fluid project-img" src="{{asset('img/project/sukses.png')}}" alt="profile" >
+            <div class="project-description">
+                <h3 class="heading-description">Sukses</h3>
+                <h5 class="description-p">My Advanced Web Programming Exam</h5>
+            </div>
+        </div></a>
+        <a class="link-project" href="https://github.com/JohanSuryanto11/ProjectAbner" target="_blank"><div class="project-list mb-5">
+            <img class="img-fluid project-img" src="{{asset('img/project/project.png')}}" alt="profile" >
+            <div class="project-description">
+                <h3 class="heading-description">Project Abner</h3>
+                <h5 class="description-p">I was commissioned by Abner. I was asked to create a simple CRUD application.</h5>
+            </div>
+        </div></a>
+        <a class="link-project" href="https://github.com/JohanSuryanto11/GameRPG" target="_blank"><div class="project-list mb-5">
+            <img class="img-fluid project-img" src="{{asset('img/project/rpggame.png')}}" alt="profile" >
+            <div class="project-description">
+                <h3 class="heading-description">RPG Game</h3>
+                <h5 class="description-p">My advanced object oriented programming exam</h5>
+            </div>
+        </div></a>
+
+    </div>
+</div>
+
 <script src="{{ asset('js/home.js') }}" defer></script>
 <link href="{{ asset('css/home.css') }}" rel="stylesheet">
 @endsection
