@@ -25,4 +25,10 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    public function social(){
+        return view('social');
+    }
+    public function blog(){
+        return view('blog');
+    }
 }

@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="about" class="row align-items-center">
-    <div class="container mt-5 profile fade-in-left col">
+    <div class="container profile fade-in-left col">
         <img class="img-fluid" src="{{asset('img/home.png')}}" alt="profile" >
     </div>
     <div class="container text-white about col">
@@ -67,51 +67,56 @@
 
 </div>
 
-<div class="skill-set mt-5">
-    <div class="wrapper">
+<div class="skill-set row mt-5">
+    <div class="wrapper col">
         <h1 class="heading-skillset mb-3">Skillset</h1>
-        <h5 class="p-skillset">With these skills, I can fill whatever your needs are, I can pretty much take on any challenge.</h5>
+        <h5 class="p-skillset-title">With these skills, I can fill whatever your needs are, I can pretty much take on any challenge.</h5>
     </div>
 
-    <div class="wrapper">
-        <h1 class="heading-skillset mt-5">Programming Language</h1>
-        <div class="skill-wrapper">
-            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/java.png')}}" alt="profile" >
-            <h1 class="heading-language">Java</h1>
-            <h5 class="p-skillset">My university has a strong emphasis on Java programming language, providing comprehensive courses and resources to equip me with in-depth knowledge and practical skills in Java development.</h5>
-            <a class="link-button" href="/download/programmingcertificate.jpg" target="_blank">Certificate</a>
+    <div class="wrapper col-6">
+        <h1 class="heading-skillset">Programming Language</h1>
+        <div class="skill-row row">
+            <div class="skill-wrapper col">
+                <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/java.png')}}" alt="profile" >
+                <h1 class="heading-language">Java</h1>
+                <h5 class="p-skillset">My university has a strong emphasis on Java programming language, providing comprehensive courses and resources to equip me with in-depth knowledge and practical skills in Java development.</h5>
+                <a class="link-button" href="/download/programmingcertificate.jpg" target="_blank">Certificate</a>
+            </div>
+            <div class="skill-wrapper col">
+                <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/c++.png')}}" alt="profile" >
+                <h1 class="heading-language">C++</h1>
+                <h5 class="p-skillset">By assisting my friend with their project, I had the opportunity to dig into C++ programming, expanding my knowledge and honing my skills in this powerful language.</h5>
+            </div>
+            <div class="skill-wrapper col">
+                <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/chash.png')}}" alt="profile" >
+                <h1 class="heading-language">C#</h1>
+                <h5 class="p-skillset">Since my final project using framework Unity, i gained valuable C# skills.</h5>
+                <a class="link-button" href="https://github.com/JohanSuryanto11/HealthyTD" target="_blank">Project</a>
+            </div>
         </div>
-        <div class="skill-wrapper">
-            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/c++.png')}}" alt="profile" >
-            <h1 class="heading-language">C++</h1>
-            <h5 class="p-skillset">By assisting my friend with their project, I had the opportunity to dig into C++ programming, expanding my knowledge and honing my skills in this powerful language.</h5>
-        </div>
-        <div class="skill-wrapper">
-            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/chash.png')}}" alt="profile" >
-            <h1 class="heading-language">C#</h1>
-            <h5 class="p-skillset">Since my final project using framework Unity, i gained valuable C# skills.</h5>
-            <a class="link-button" href="https://github.com/JohanSuryanto11/HealthyTD" target="_blank">Project</a>
-        </div>
-        <div class="skill-wrapper">
-            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/php.png')}}" alt="profile" >
-            <h1 class="heading-language">PHP</h1>
-            <h5 class="p-skillset">During my time at university, I had the opportunity to learn PHP, acquiring a solid understanding of its concepts and practical application.</h5>
-            <a class="link-button" href="/download/programmingcertificate.jpg" target="_blank">Certificate</a>
-        </div>
-        <div class="skill-wrapper">
-            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/js.png')}}" alt="profile" >
-            <h1 class="heading-language">JavaScript</h1>
-            <h5 class="p-skillset">By building my own website, I not only created an online presence, but I also gained a comprehensive understanding of JavaScript, as it played a crucial role in enhancing the interactivity and functionality of my site.</h5>
-        </div>
-        <div class="skill-wrapper">
-            <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/sql.png')}}" alt="profile" >
-            <h1 class="heading-language">SQL</h1>
-            <h5 class="p-skillset">Through my project during university, I gained hands-on experience with SQL, mastering its principles and techniques for effective database management and manipulation.</h5>
-            <a class="link-button" href="/download/databasecertificate.jpg" target="_blank">Certificate</a>
+        <div class="skill-row row">
+            <div class="skill-wrapper col">
+                <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/php.png')}}" alt="profile" >
+                <h1 class="heading-language">PHP</h1>
+                <h5 class="p-skillset">During my time at university, I had the opportunity to learn PHP, acquiring a solid understanding of its concepts and practical application.</h5>
+                <a class="link-button" href="/download/programmingcertificate.jpg" target="_blank">Certificate</a>
+            </div>
+            <div class="skill-wrapper col">
+                <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/js.png')}}" alt="profile" >
+                <h1 class="heading-language">JavaScript</h1>
+                <h5 class="p-skillset">By building my own website, I not only created an online presence, but I also gained a comprehensive understanding of JavaScript, as it played a crucial role in enhancing the interactivity and functionality of my site.</h5>
+            </div>
+            <div class="skill-wrapper col">
+                <img class="img-fluid skill-logo mb-3 mt-4" src="{{asset('img/logo/language/sql.png')}}" alt="profile" >
+                <h1 class="heading-language">SQL</h1>
+                <h5 class="p-skillset">Through my project during university, I gained hands-on experience with SQL, mastering its principles and techniques for effective database management and manipulation.</h5>
+                <a class="link-button" href="/download/databasecertificate.jpg" target="_blank">Certificate</a>
+            </div>
         </div>
     </div>
+</div>
 
-
+<div class="framework-section">
     <h1 class="heading-framework mt-5">Framework or IDE that i've worked with</h1>
     <div class="framework-grid">
 
@@ -123,45 +128,50 @@
         <div class="framework-box"><img class="img-fluid framework-logo" src="{{asset('img/logo/framework/netbeans.png')}}" alt="netbeans" ></div>
     </div>
 </div>
-<div id="project" class="my-project mt-5">
-    <div class="wrapper">
-        <h5 class="description-p mb-4" style="font-weight: bold"> My Projects</h5>
-        <a class="link-project" href="https://github.com/JohanSuryanto11/HealthyTD" target="_blank"><div class="project-list mb-5">
-            <img class="img-fluid project-img" src="{{asset('img/project/healthytd.png')}}" alt="profile" >
-            <div class="project-description">
-                <h3 class="heading-description">Healthy TD</h3>
-                <h5 class="description-p">My final project for Bachelor degree. A strategy game simulating digestive system in humans</h5>
-            </div>
-        </div></a>
-        <a class="link-project" href="https://github.com/JohanSuryanto11/UTS-2018130019" target="_blank"><div class="project-list mb-5">
-            <img class="img-fluid project-img" src="{{asset('img/project/uts.png')}}" alt="profile" >
-            <div class="project-description">
-                <h3 class="heading-description">Midterm Exam</h3>
-                <h5 class="description-p">My Midterm Exam Advanced Web Programming.</h5>
-            </div>
-        </div></a>
-        <a class="link-project" href="https://github.com/JohanSuryanto11/Sukses" target="_blank"><div class="project-list mb-5">
-            <img class="img-fluid project-img" src="{{asset('img/project/sukses.png')}}" alt="profile" >
-            <div class="project-description">
-                <h3 class="heading-description">Sukses</h3>
-                <h5 class="description-p">My Advanced Web Programming Exam</h5>
-            </div>
-        </div></a>
-        <a class="link-project" href="https://github.com/JohanSuryanto11/ProjectAbner" target="_blank"><div class="project-list mb-5">
-            <img class="img-fluid project-img" src="{{asset('img/project/project.png')}}" alt="profile" >
-            <div class="project-description">
-                <h3 class="heading-description">Project Abner</h3>
-                <h5 class="description-p">I was commissioned by Abner. I was asked to create a simple CRUD application.</h5>
-            </div>
-        </div></a>
-        <a class="link-project" href="https://github.com/JohanSuryanto11/GameRPG" target="_blank"><div class="project-list mb-5">
-            <img class="img-fluid project-img" src="{{asset('img/project/rpggame.png')}}" alt="profile" >
-            <div class="project-description">
-                <h3 class="heading-description">RPG Game</h3>
-                <h5 class="description-p">My advanced object oriented programming exam</h5>
-            </div>
-        </div></a>
 
+<div id="project" class="my-project mt-5">
+    <div class="wrapper project-grid">
+        <div class="left-side-project">
+            <h5 class="description-p" style="font-weight: bold"> My Projects</h5>
+            <p class="project-title-desc">The work I've done in the past</p>
+            <a class="link-project" href="https://github.com/JohanSuryanto11/HealthyTD" target="_blank"><div class="project-list mb-5">
+                <img class="img-fluid project-img" src="{{asset('img/project/healthytd.png')}}" alt="profile" >
+                <div class="project-description">
+                    <h3 class="heading-description">Healthy TD</h3>
+                    <h5 class="description-p">My final project for Bachelor degree. A strategy game simulating digestive system in humans</h5>
+                </div>
+            </div></a>
+            <a class="link-project" href="https://github.com/JohanSuryanto11/UTS-2018130019" target="_blank"><div class="project-list mb-5">
+                <img class="img-fluid project-img" src="{{asset('img/project/uts.png')}}" alt="profile" >
+                <div class="project-description">
+                    <h3 class="heading-description">Midterm Exam</h3>
+                    <h5 class="description-p">My Midterm Exam Advanced Web Programming.</h5>
+                </div>
+            </div></a>
+        </div>
+        <div class="right-side-project">
+            <a class="link-project" href="https://github.com/JohanSuryanto11/Sukses" target="_blank"><div class="project-list mb-5">
+                <img class="img-fluid project-img" src="{{asset('img/project/sukses.png')}}" alt="profile" >
+                <div class="project-description">
+                    <h3 class="heading-description">Sukses</h3>
+                    <h5 class="description-p">My Advanced Web Programming Exam</h5>
+                </div>
+            </div></a>
+            <a class="link-project" href="https://github.com/JohanSuryanto11/ProjectAbner" target="_blank"><div class="project-list mb-5">
+                <img class="img-fluid project-img" src="{{asset('img/project/project.png')}}" alt="profile" >
+                <div class="project-description">
+                    <h3 class="heading-description">Project Abner</h3>
+                    <h5 class="description-p">I was commissioned by Abner. I was asked to create a simple CRUD application.</h5>
+                </div>
+            </div></a>
+            <a class="link-project" href="https://github.com/JohanSuryanto11/GameRPG" target="_blank"><div class="project-list mb-5">
+                <img class="img-fluid project-img" src="{{asset('img/project/rpggame.png')}}" alt="profile" >
+                <div class="project-description">
+                    <h3 class="heading-description">RPG Game</h3>
+                    <h5 class="description-p">My advanced object oriented programming exam</h5>
+                </div>
+            </div></a>
+        </div>
     </div>
 </div>
 

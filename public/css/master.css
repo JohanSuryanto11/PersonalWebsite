@@ -5,6 +5,10 @@
 .nav-link{
     color: white;
     margin-right: 50px;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: #0ff;
 }
 
 .body{
@@ -12,11 +16,36 @@
     font-family: sans-serif;
 }
 
+/*footer section*/
+.footer{
+    background-color: #181823;
+    padding: 40px 40px;
+}
+
+.footer-logo{
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
 .footer-link{
     font-size: 16px;
     text-decoration: none;
     color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+
+.footer-grid{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
 @media all and (max-width: 767px) {
     .nav-link{
         color: white;
@@ -30,5 +59,31 @@
     }
     .navbar-brand{
         margin-left: 5px;
+    }
+
+    .footer{
+        background-color: #181823;
+        padding: 40px 40px;
+    }
+
+    .footer-logo{
+        font-size: 40px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .footer-link{
+        font-size: 16px;
+        text-decoration: none;
+        color: white;
+    }
+    .footer-grid{
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-column-gap: 24px;
+        grid-row-gap: 16px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
 }

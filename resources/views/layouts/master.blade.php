@@ -18,7 +18,7 @@
 </head>
 <body class="body">
     <div id="app">
-        <nav class="navbar navbar-expand-md fixed-top">
+        <nav class="navbar navbar-expand-md">
             <div class="container">
                 <a class="navbar-brand text-white" href="{{ url('/') }}">
                     <b>Johan Suryanto</b>
@@ -29,10 +29,10 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('social') }}">Social</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('blog') }}">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mailto:johansuryanto11@gmail.com">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -42,7 +42,7 @@
     </div>
 </body>
 <footer>
-    <div class="footer">
+    <div class="footer footer-grid">
         <div class="wrapper-footer-left">
             <a href="/home" class="footer-logo text-white">Johan Suryanto</a>
             <div class="wrapper-sm-footer">
@@ -80,17 +80,17 @@
                 </ul>
             </div>
         </div>
-        <div class="wrapper-footer-right mt-4">
+        <div class="wrapper-footer-right">
             <div class="row">
-                <ul class="list-unstyled col">
-                    <li class="mb-3"><a class="footer-link text-white" href="/home">Home</a></li>
-                    <li class="mb-3"><a class="footer-link text-white" href="/home#about">About</a></li>
-                    <li class="mb-3"><a class="footer-link text-white" href="/home#project">Project</a></li>
-                </ul>
-                <ul class="list-unstyled col">
-                    <li class="mb-3"><a class="footer-link text-white" href="/social">More Me</a></li>
-                    <li class="mb-3"><a class="footer-link text-white" href="/blog">Blog</a></li>
-                </ul>
+                <div class="list-unstyled col">
+                    <li class="footer-link"><a class="footer-link text-white" href="/home">Home</a></li>
+                    <li class="footer-link"><a class="footer-link text-white" href="/home#about">About</a></li>
+                    <li class="footer-link"><a class="footer-link text-white" href="/home#project">Project</a></li>
+                </div>
+                <div class="list-unstyled col">
+                    <li class="footer-link"><a class="footer-link text-white" href="{{ route('social') }}">More Me</a></li>
+                    <li class="footer-link"><a class="footer-link text-white" href="{{ route('blog') }}">Blog</a></li>
+                </div>
             </div>
         </div>
     </div>

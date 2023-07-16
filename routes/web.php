@@ -20,5 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/social', [App\Http\Controllers\HomeController::class, 'social'])->name('social');
+Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blog'])->name('blog');
 
 Route::get('/download/{namefile}', 'DownloadController@downloadFile')->name('download.file');
