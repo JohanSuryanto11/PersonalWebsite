@@ -1,16 +1,22 @@
 .under-construction-grid{
-    grid-template-columns: 1fr 1fr;
     grid-row-gap: 0%;
     grid-column-gap: 0%;
-    display: grid;
-    grid-template-rows: 1fr;
-    margin-top: 30px;
+    display: flex;
     border: #5b6876;
     padding: 120px 72px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
 }
-
 .text-wrapper{
     text-align: center;
+    margin: auto;
+    position: relative;
+    padding-left: 116px;
+}
+.img-wrapper{
+    margin: auto;
+    position: relative;
 }
 .coming-soon{
     color: gold;
@@ -51,31 +57,30 @@ a.a-link:hover{
 .img-con{
     height: 500px;
 }
-.img-wrapper-mobile{
-    display: none;
-}
 
 @media all and (max-width: 767px) {
     .under-construction-grid{
-        grid-template-columns: 1fr;
         grid-row-gap: 0%;
         grid-column-gap: 0%;
-        display: grid;
         grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        display: grid;
         border: #5b6876;
         padding: 50px 0px;
-
+        text-align: center;
+        align-items: center;
+        align-content: center;
     }
     .text-wrapper{
         text-align: center;
+        margin: auto;
+        position: relative;
+        padding-left: 0px;
     }
     .img-wrapper{
+        margin: auto;
+        position: relative;
         display: none;
-    }
-    .img-wrapper-mobile{
-        display: block;
-        text-align: center;
-        margin-bottom: 20px;
     }
     .coming-soon{
         color: gold;

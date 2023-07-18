@@ -24,3 +24,7 @@ Route::get('/social', [App\Http\Controllers\HomeController::class, 'social'])->n
 Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blog'])->name('blog');
 
 Route::get('/download/{namefile}', 'DownloadController@downloadFile')->name('download.file');
+
+Route::fallback(function () {
+    return view('/404');
+});

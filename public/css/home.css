@@ -11,7 +11,7 @@
 }
 
 .fade-in-right{
-    animation-name: fadeInLeft;
+    animation-name: fadeInRight;
     animation-duration: 2s;
 }
 

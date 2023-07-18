@@ -1,6 +1,9 @@
 @extends('layouts.master')
 @section('content')
 <div class="under-construction-grid">
+    <div class="img-wrapper-mobile">
+        <img class="img-con" src="{{asset('img/construction.png')}}" alt="under construction">
+    </div>
     <div class="text-wrapper">
         <div class="coming-soon">Coming Soon...</div>
         <div class="under-construct">Website is under construction</div>

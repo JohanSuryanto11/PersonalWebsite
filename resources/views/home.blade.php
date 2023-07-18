@@ -10,7 +10,7 @@
             Fresh Graduate<br>
             <a class="country"> based in Indonesia, Bandung.</a></b>
         </h1>
-        <h5>I have excellent programming skills,
+        <h5 class="fade-in-right">I have excellent programming skills,
             I love to learn new things especially challenging ones.</h5>
     </div>
 </div>
